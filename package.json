@@ -10,7 +10,11 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-responsive": "^9.0.0-beta.10",
+    "styled-components": "^5.3.5",
+    "styled-reset": "^4.4.2",
+    "vite-plugin-svgr": "^2.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
