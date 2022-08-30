@@ -21,13 +21,15 @@ const HeroContainer = styled(Container)`
 `;
 const HeroText = styled.div`
   color: white;
-  width: 100%;
+  width: 90%;
   place-self: center;
+  * {
+    margin-bottom: 1rem;
+  }
 `;
 const HeroTextWrapper = styled.div`
   color: white;
   width: 100%;
-  padding-left: 1rem;
   place-self: center;
 `;
 const HeroTextP = styled.p`
@@ -55,11 +57,23 @@ const HeroVideo = styled.div`
   }
 `;
 
+const YellowSpan = styled.span`
+  color: #ecb22e;
+`;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  width: 90%;
+  align-items: center;
+`;
+
 export {
   HeroWrapper,
   HeroContainer,
   HeroText,
   HeroTextWrapper,
   HeroTextP,
+  ButtonWrapper,
   HeroVideo,
+  YellowSpan,
 };

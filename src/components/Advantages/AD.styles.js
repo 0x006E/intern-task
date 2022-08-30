@@ -37,7 +37,34 @@ const ADTextP = styled.p`
   letter-spacing: -0.2px;
 `;
 
-const ADLink = styled.a``;
+const ADLink = styled.a`
+  font-family: ${({ theme }) => theme.fonts.circular};
+  color: ${({ theme }) => theme.accent.blue[200]};
+  font-weight: 400;
+  line-height: 1.4444;
+  letter-spacing: normal;
+  font-size: 1.125rem;
+  position: relative;
+  cursor: pointer;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 0%;
+    border-bottom: 3px solid ${({ theme }) => theme.accent.blue[200]};
+    margin-top: 10px;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+`;
 const ADWrapper = styled.div`
   font-family: ${({ theme }) => theme.fonts.base};
   display: flex;

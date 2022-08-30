@@ -15,12 +15,12 @@ function AD2() {
   const video = (
     <ADVideo right order={2}>
       <MediaQuery minWidth={768}>
-        <video autoplay loop muted playsinline>
+        <video autoPlay loop muted playsInline>
           <source src="videos/flexibility.webm" type="video/webm" />
         </video>
       </MediaQuery>
       <MediaQuery maxWidth={767}>
-        <video autoplay loop muted playsinline>
+        <video autoPlay loop muted playsInline>
           <source src="videos/flexibility-mobile.webm" type="video/webm" />
         </video>
       </MediaQuery>

@@ -63,7 +63,9 @@ const CssBaseline = createGlobalStyle`
   ${reset}
 
   * {
-    outline: 1px solid red;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
   body {

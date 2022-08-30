@@ -11,6 +11,8 @@ const Navbar = styled(Container)`
   background-color: transparent;
   height: 80px;
   margin: 0 auto;
+  padding: 0 1rem;
+  align-items: center;
 `;
 
 const NavbarList = styled.ul``;

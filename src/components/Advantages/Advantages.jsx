@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Container from "../Container";
 import AD1 from "./AD1";
 import AD2 from "./AD2";
 import AD3 from "./AD3";
 
-const AdvantagesWrapper = styled(Container)`
+const AdvantagesWrapper = styled.div`
   margin-top: -3rem;
   background-color: ${({ theme }) => theme.accent.cream};
 `;

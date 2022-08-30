@@ -17,12 +17,12 @@ function AD1() {
       <ADContainer>
         <ADVideo>
           <MediaQuery minWidth={768}>
-            <video autoplay loop muted playsinline>
+            <video autoPlay loop muted playsInline>
               <source src="videos/connectedness.webm" type="video/webm" />
             </video>
           </MediaQuery>
           <MediaQuery maxWidth={767}>
-            <video autoplay loop muted playsinline>
+            <video autoPlay loop muted playsInline>
               <source
                 src="videos/connectedness-mobile.webm"
                 type="video/webm"

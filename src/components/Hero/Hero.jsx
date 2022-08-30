@@ -1,12 +1,16 @@
 import React from "react";
+import MediaQuery from "react-responsive";
+import Button from "../Button";
 import H1 from "../H1";
 import {
+  ButtonWrapper,
   HeroContainer,
   HeroText,
   HeroTextP,
   HeroTextWrapper,
   HeroVideo,
   HeroWrapper,
+  YellowSpan,
 } from "./Hero.styles";
 
 function Hero() {
@@ -15,13 +19,22 @@ function Hero() {
       <HeroContainer>
         <HeroText>
           <HeroTextWrapper>
-            <H1>Great teamwork starts with a digital HQ</H1>
+            <H1>
+              Great teamwork starts with a <YellowSpan>digital HQ</YellowSpan>
+            </H1>
             <HeroTextP>
               With all your people, tools and communication in one place, you
               can work faster and more flexibly than ever before.
             </HeroTextP>
-            <button>Sign up with email address</button>
-            <button>Sign up using Google</button>
+            <ButtonWrapper>
+              <MediaQuery maxWidth={767}>
+                {(matches) => (
+                  <Button fullWidth={matches}>
+                    Sign up with email address
+                  </Button>
+                )}
+              </MediaQuery>
+            </ButtonWrapper>
           </HeroTextWrapper>
         </HeroText>
         <HeroVideo>
